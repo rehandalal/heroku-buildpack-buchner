@@ -58,6 +58,7 @@ if [ -f $BUILD_DIR/node.json ]; then
   mv $BUILD_DIR/node.json $BUILD_DIR/package.json
   echo "-----> Rename 'node.json' -> 'package.json'"
   source $BIN_DIR/steps/nodejs
+  export PATH=$HOME/node_modules/.bin:$PATH
 fi
 
 # Syntax sugar.

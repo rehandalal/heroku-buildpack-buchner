@@ -251,6 +251,11 @@ set-default-env LANG en_US.UTF-8
 set-default-env PYTHONHASHSEED random
 set-default-env PYTHONPATH /app/
 
+# Check for a Buildfile and run
+if [ -f $BUILD_DIR/Buildfile ]; then
+  puts-step "Buildfile detected"
+  source $BUILD_DIR/Buildfile
+fi
 
 # Experimental post_compile hook.
 bpwatch start post_compile

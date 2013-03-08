@@ -47,7 +47,7 @@ will detect a Node.js dependency and install Node.js and npm.
 This `node.json` file should be a facsimile of a `package.json` file as outlined
 at http://package.json.nodejitsu.com/
 
-Additonial build related tasks
+Additional build related tasks
 ------------------------------
 
 Sometimes you will have project specific tasks that need to be completed at
